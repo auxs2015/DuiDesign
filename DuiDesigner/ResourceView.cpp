@@ -87,11 +87,11 @@ int CResourceViewBar::OnCreate(LPCREATESTRUCT lpCreateStruct)
 void CResourceViewBar::OnSize(UINT nType, int cx, int cy)
 {
 	CDockablePane::OnSize(nType, cx, cy);
-
-	if (CanAdjustLayout())
+	//Брвы
+	/*if (CanAdjustLayout())
 	{
 		m_wndResourceView.SetWindowPos(NULL, 1, 1, cx - 2, cy - 2, SWP_NOACTIVATE | SWP_NOZORDER);
-	}
+	}*/
 }
 
 void CResourceViewBar::InitResourceView()
